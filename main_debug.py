@@ -9,36 +9,31 @@ plt.style.use(["tstat_plots.mplstyle"])
 from Loader import Loader
 from DataVectorizer import DataVectorizer
 from Classifier import Classifier
+import os
 
 
-from config import config_dict
+from config import config_dict, config_dict_grid, output_name, n_cores
 
 
 #Loader trials
 if __name__ == "__main__":
 
 
-    config_dict_grid = {
-     #seconds before: -1 to take all domains from the whole pcap
-     "seconds_before": [30, 25, 20, 15, 10, 5, 0],
-     "seconds_after": [0, 5, 10, 15, 20, 25, 30],
-     "use_as": [False],
-     "vectorizer_min_df": [0.02],
-     "vectorizer_max_df": [0.7],
-     "feature_selection" : [False],
-     "num_features": [20],
-     "domain_level": ["description"],
-     "one_vs_all_type": ["knn", "nb", "gnb", "rf", "svm", "dt"],
-     }
-
 
     keys, values = zip(*config_dict_grid.items())
     permutation_dicts = [dict(zip(keys, v)) for v in itertools.product(*values)]
 
+    
     save_to_file = 1
+    
     if save_to_file:
-        save_path = "./Output_data/algs_seconds.json"
+        save_folder = "Output_data"
+        if not os.path.exists(save_folder):
+            os.makedirs(save_folder)
+        save_path = os.path.join(save_folder, f"{output_name}.json")
         save_file = open(save_path, "w+")
+        
+    
     i=0
 
     for conf_dict in permutation_dicts:

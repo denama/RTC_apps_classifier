@@ -1,2 +1,4 @@
 Output_data/
 core
+.ipynb_checkpoints/
+__pycache__/

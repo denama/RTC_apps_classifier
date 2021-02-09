@@ -9,7 +9,7 @@ Before running, open config.py and specify the parameters you want in:
 * output_name --> name of the json file with output
 * n_cores --> number of processes to use in case you run main_debug_mp.py
 
-The output will appear in a folder Output_data/
+The output will appear in a folder *Output_data/*
 
 ## Additional info
 The paper explaining the logic behind the classifier and the parameters will be out soon!

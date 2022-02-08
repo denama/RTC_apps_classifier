@@ -12,4 +12,4 @@ Before running, open config.py and specify the parameters you want in:
 The output will appear in a folder *Output_data/*
 
 ## Additional info
-The paper explaining the logic behind the classifier and the parameters will be out soon!
+The paper explaining the logic behind the classifier and the parameters is available here: https://dl.acm.org/doi/abs/10.1145/3466826.3466841

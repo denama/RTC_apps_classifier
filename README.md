@@ -14,5 +14,19 @@ The output will appear in a folder *Output_data/*
 ## Data
 As data it uses the server name specified in TLS Client Hello messages. The data is in the folder *Data_enriched/*. It tries many configurations of parameters and runs classification experiments for all of them.
 
-## Additional info
-The paper explaining the logic behind the classifier and the parameters is available here: https://dl.acm.org/doi/abs/10.1145/3466826.3466841
+## Paper
+The paper describing this classifier is "What's my App?: ML-based classification of RTC applications" and it's available here: https://dl.acm.org/doi/abs/10.1145/3466826.3466841
+
+#### BibTeX
+"""
+@article{markudova2021s,
+  title={What's my app? ml-based classification of rtc applications},
+  author={Markudova, Dena and Trevisan, Martino and Garza, Paolo and Meo, Michela and Munafo, Maurizio M and Carofiglio, Giovanna},
+  journal={ACM SIGMETRICS Performance Evaluation Review},
+  volume={48},
+  number={4},
+  pages={41--44},
+  year={2021},
+  publisher={ACM New York, NY, USA}
+}
+"""

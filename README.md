@@ -18,7 +18,7 @@ As data it uses the server name specified in TLS Client Hello messages. The data
 The paper describing this classifier is "What's my App?: ML-based classification of RTC applications" and it's available here: https://dl.acm.org/doi/abs/10.1145/3466826.3466841
 
 #### BibTeX
-"""
+```
 @article{markudova2021s,
   title={What's my app? ml-based classification of rtc applications},
   author={Markudova, Dena and Trevisan, Martino and Garza, Paolo and Meo, Michela and Munafo, Maurizio M and Carofiglio, Giovanna},
@@ -29,4 +29,4 @@ The paper describing this classifier is "What's my App?: ML-based classification
   year={2021},
   publisher={ACM New York, NY, USA}
 }
-"""
+```
